@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>chicka boom firework</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+        
+    </head>
+    <body>
+        <a-scene>
+            <a-entity position="0 1 0 "
+            spe-particles="
+            color:#09518b,#c4d9dc,#5cc4dd;
+            distribution:sphere;
+            particle-count:800 ;
+            randomize-velocity:true;
+            radius:2.5
+            ;
+            velocity:1;
+            velocity-spread:15;
+            active-multiplier:1000;
+            duration:-1;
+            max-age:2;
+            size:2,2,2,0;
+            drag:1;
+            blending:additive;
+            "
+
+            ></a-entity>
+            <a-sky color="#0b0f10"></a-sky>
+            <a-camera position="0 0 30"></a-camera>
+        </a-scene>
+        
+    </body>
+</html>
